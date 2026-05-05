@@ -1,4 +1,6 @@
-﻿namespace Dsw2026Ej8
+﻿using static Dsw2026Ej8.Sale;
+
+namespace Dsw2026Ej8
 {
     internal class Program
     {
@@ -19,11 +21,17 @@
             //string resultado = p3.CompararCopias(5, producto);
             //Console.WriteLine(resultado);
 
-            Problema4 p4 = new Problema4();
-            Console.WriteLine(p4.CalcularPromedio(8, 9, 10));     // 9
-            Console.WriteLine(p4.CalcularPromedio(8, null, 10));  // 9
-            Console.WriteLine(p4.CalcularPromedio(null, null, null)); // 0
-            Console.WriteLine(p4.CalcularPromedio(8, 20, 10));    // 9 (20 se ignora)
+            //Problema4 p4 = new Problema4();
+            //Console.WriteLine(p4.CalcularPromedio(8, 9, 10));     
+            //Console.WriteLine(p4.CalcularPromedio(8, null, 10)); 
+            //Console.WriteLine(p4.CalcularPromedio(null, null, null)); 
+            //Console.WriteLine(p4.CalcularPromedio(8, 20, 10));
+
+            Problema5 p5 = new Problema5();
+            Sale ventaMinorista = new RetailSale { Amount = 1000 };
+            Sale ventaMayorista = new WholesaleSale { Amount = 1000 };
+            Console.WriteLine(p5.ObtenerImporteFinal(ventaMinorista)); // Imprime 1000
+            Console.WriteLine(p5.ObtenerImporteFinal(ventaMayorista)); // Imprime 900
         }
     }
 }
