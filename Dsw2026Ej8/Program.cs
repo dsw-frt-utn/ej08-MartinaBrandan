@@ -27,11 +27,14 @@ namespace Dsw2026Ej8
             //Console.WriteLine(p4.CalcularPromedio(null, null, null)); 
             //Console.WriteLine(p4.CalcularPromedio(8, 20, 10));
 
-            Problema5 p5 = new Problema5();
-            Sale ventaMinorista = new RetailSale { Amount = 1000 };
-            Sale ventaMayorista = new WholesaleSale { Amount = 1000 };
-            Console.WriteLine(p5.ObtenerImporteFinal(ventaMinorista)); // Imprime 1000
-            Console.WriteLine(p5.ObtenerImporteFinal(ventaMayorista)); // Imprime 900
+            // Problema5 p5 = new Problema5();
+            //Sale ventaMinorista = new RetailSale { Amount = 1000 };
+            //Sale ventaMayorista = new WholesaleSale { Amount = 1000 };
+            //Console.WriteLine(p5.ObtenerImporteFinal(ventaMinorista)); 
+            //Console.WriteLine(p5.ObtenerImporteFinal(ventaMayorista)); 
+
+            Problema6 p6 = new Problema6();
+            Console.WriteLine(p6.NormalizarCodigoProducto(" ab 123 x "));
         }
     }
 }
